@@ -1,0 +1,246 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Definindo a logo */
+.logo {
+    position: absolute;
+    left: 10px;
+top:25px;
+    width: 128px;
+}
+
+/* Container centralizado */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-image: url("image/HeaderBackground.webp");
+    background-position: center;
+    color: #ffcc00; /* Amarelo */
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #003366;
+    text-shadow: black -2px 2px 8px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navegação */
+nav {
+    background-color: #ffcc00;
+    color: #003366;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Esconde o menu mobile */
+nav ul.active {
+    display: flex;
+}
+
+nav .menu-toggle {
+    display: none;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+.btnwhats{
+	background-color: #04AA6D;
+  	border-radius: 8px;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+	text-decoration:none;
+	
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    /* Ajustando o tamanho da logo */
+    .logo {
+        width: 100px;
+        left: 20px;
+    }
+
+    /* Container para dispositivos móveis */
+    .container {
+        width: 90%;
+    }
+
+    /* Cabeçalho */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Navegação */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Esconde o menu inicialmente */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    nav .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #003366;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Seções */
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+
+.btnwhats{
+  	font-size: 12px;	
+}
+
+    /* Rodapé */
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Logo */
+    .logo {
+        width: 80px;
+        left: 10px;
+    }
+
+    /* Cabeçalho */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    /* Navegação */
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* Seções */
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, section ul {
+        font-size: 0.9rem;
+    }
+
+    /* Rodapé */
+    footer p {
+        font-size: 0.8rem;
+    }
+}
