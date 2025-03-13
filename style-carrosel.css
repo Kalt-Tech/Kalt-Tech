@@ -1,0 +1,65 @@
+    .carousel {
+        width: 75%;
+        overflow: hidden;
+        margin: 0 auto;
+		margin-bottom:5%;
+        position: relative; /* Para posicionar os botões */
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+	
+	.imgcarrosel {
+        
+	    width:25%;
+	    border-radius: 8px;
+	}
+
+    .description{
+        font-size: large;
+    }
+
+    /* Botões para navegação */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        border: none;
+        outline: none;
+        z-index: 1;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    /* Para tornar o carrossel responsivo */
+    @media (max-width: 768px) {
+        .carousel {
+            width: 75%;
+        }
+        .imgcarrosel {
+        
+            width:50%;
+            border-radius: 8px;
+        }
+    }

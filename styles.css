@@ -15,10 +15,10 @@ body {
 
 /* Definindo a logo */
 .logo {
-    position: absolute;
+    /* position: absolute;
     left: 10px;
-top:25px;
-    width: 128px;
+    top:25px; */
+    width: 256px;
 }
 
 /* Container centralizado */
@@ -29,13 +29,14 @@ top:25px;
 
 /* Cabeçalho */
 header {
-    background-image: url("image/HeaderBackground.webp");
+    background-image: url("image/backgroundHeader.png");
     background-position: center;
-    color: #ffcc00; /* Amarelo */
+    color: #f6a303; /* Amarelo */
     padding: 40px 0;
     text-align: center;
-    border-bottom: 5px solid #003366;
+    /* border-bottom: 5px solid #2f3175; */
     text-shadow: black -2px 2px 8px;
+    /* height: 200px; */
 }
 
 header h1 {
@@ -49,8 +50,8 @@ header p {
 
 /* Navegação */
 nav {
-    background-color: #ffcc00;
-    color: #003366;
+    background-color: #f6a303;
+    color: #2f3175;
     padding: 15px 0;
 }
 
@@ -65,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #003366;
+    color: #2f3175;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -94,7 +95,7 @@ section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #003366;
+    color: #2f3175;
 }
 
 section p, section ul {
@@ -129,7 +130,7 @@ section ul li {
 
 /* Rodapé */
 footer {
-    background-color: #003366;
+    background-color: #2f3175;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -144,7 +145,7 @@ footer p {
 @media screen and (max-width: 768px) {
     /* Ajustando o tamanho da logo */
     .logo {
-        width: 100px;
+        width: 256px;
         left: 20px;
     }
 
@@ -181,7 +182,7 @@ footer p {
         display: block;
         font-size: 1.5rem;
         cursor: pointer;
-        color: #003366;
+        color: #2f3175;
         padding: 10px;
         text-align: center;
     }
@@ -208,7 +209,7 @@ footer p {
 @media screen and (max-width: 480px) {
     /* Logo */
     .logo {
-        width: 80px;
+        width: 180px;
         left: 10px;
     }
 
